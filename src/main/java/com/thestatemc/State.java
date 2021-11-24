@@ -14,6 +14,8 @@ public class State extends JavaPlugin {
         plugin = this;
         saveDefaultConfig();
         initializeDatabase();
+
+        new StateCommand();
     }
 
     private void initializeDatabase() {
